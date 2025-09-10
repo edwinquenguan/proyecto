@@ -7,7 +7,6 @@ const Dashboard = () => {
       <h1>Bienvenido</h1>
         <h2>Esta es la página de inicio del Trainlinker.</h2>
         <img src="logo tranclinker.jpeg" alt="Logo de la aplicaciónlogo tranclinker.jpeg" />
-      
     </div>
   );
 }

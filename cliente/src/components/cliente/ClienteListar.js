@@ -1,6 +1,6 @@
 
 /*import React from "react";*/
-/*import { Form, Button, Container, Alert, Spinner, Row, Col, Table } from 'react-bootstrap';*/
+import { Form, Button, Container, Alert, Spinner, Row, Col, Table } from 'react-bootstrap';
 const ClienteListar=() =>{
     return (
         <Container>
@@ -20,13 +20,34 @@ const ClienteListar=() =>{
                             placeholder="buscar por documento de identidad"
                         />
                     </Col>
-                    <col md={4}>
+                    <Col md={4}>
                         <Button type="submit" variant = "outline-segundary">Buscar</Button>
                         <Button type="button" variant = "outline-segundary">Mostrar todos</Button>
-                    </col>
-                </Row>
-                
+                    </Col>
+                </Row>              
             </Form>
+            <Table class= "table table-stripad table-hover">
+                <thead>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Documento</td>
+                        <td>Apellido</td>
+                        <td>email</td>
+                        <td>Direccion</td>
+                        <td>Acciones</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Edwin</td>
+                        <td>164626545945</td>
+                        <td>Quenguan</td>
+                        <td>edwinquenguan14@gmail.com</td>
+                        
+
+                    </tr>
+                </tbody>
+            </Table>
         </Container>
     );
 };
